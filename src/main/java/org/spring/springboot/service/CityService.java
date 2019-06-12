@@ -2,31 +2,16 @@ package org.spring.springboot.service;
 
 import org.spring.springboot.domain.City;
 
-import java.util.List;
-
 /**
  * 城市业务逻辑接口类
  *
- * Created by bysocket on 07/02/2017.
+ * Created by xchunzhao on 02/05/2017.
  */
 public interface CityService {
 
     /**
-     * 获取城市
-     *
+     * 根据城市名称，查询城市信息
+     * @param cityName
      */
-    City getCityByName(String cityName);
-
-    /**
-     * 新增城市信息
-     *
-     */
-    void saveCity(City city);
-
-    /**
-     * 更新城市信息
-     *
-     */
-    void updateCityDescription(String cityName, String description);
-
+    City findCityByName(String cityName);
 }
