@@ -1,4 +1,4 @@
-package org.spring.springboot.web;
+package org.spring.springboot.controller;
 
 import org.spring.springboot.domain.City;
 import org.spring.springboot.service.CityService;
