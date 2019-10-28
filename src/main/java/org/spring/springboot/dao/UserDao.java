@@ -13,4 +13,9 @@ public interface UserDao {
      * @return User 用户
      */
     User findUserById(@Param("id") String id);
+
+    User getUserByUserName(@Param("username") String username);
+
+    void
+
 }

@@ -25,4 +25,11 @@
         from user
         where id = #{id}
     </select>
+
+    <select id="getUserByUserName" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"></include>
+        from user
+        where user_name = #{username}
+    </select>
 </mapper>

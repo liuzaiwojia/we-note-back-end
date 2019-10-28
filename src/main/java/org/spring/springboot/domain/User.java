@@ -41,6 +41,8 @@ public class User {
      */
     private String position;
 
+    private String phoneNumber;
+
     /**
      * 用户主页
      */
@@ -116,5 +118,28 @@ public class User {
 
     public void setHomePage(String homePage) {
         this.homePage = homePage;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", image='" + image + '\'' +
+                ", profile='" + profile + '\'' +
+                ", company='" + company + '\'' +
+                ", position='" + position + '\'' +
+                ", homePage='" + homePage + '\'' +
+                '}';
     }
 }

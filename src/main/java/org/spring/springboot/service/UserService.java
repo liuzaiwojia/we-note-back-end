@@ -1,6 +1,7 @@
 package org.spring.springboot.service;
 
 import org.spring.springboot.domain.User;
+import org.spring.springboot.dto.UserRegisterParam;
 
 public interface UserService {
 
@@ -10,4 +11,8 @@ public interface UserService {
      * @return
      */
     User findUserById(String id);
+
+    User getUserByUserName(String userName);
+
+    User register (User user);
 }
