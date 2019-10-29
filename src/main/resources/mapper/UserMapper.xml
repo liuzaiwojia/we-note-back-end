@@ -32,4 +32,9 @@
         from user
         where user_name = #{username}
     </select>
+
+    <insert id="insert" parameterType="User">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer"></selectKey>
+        insert into user () values ()
+    </insert>
 </mapper>

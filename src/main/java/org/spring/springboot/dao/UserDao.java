@@ -16,6 +16,6 @@ public interface UserDao {
 
     User getUserByUserName(@Param("username") String username);
 
-    void
+    void insert(@Param("user") User user);
 
 }
